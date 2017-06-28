@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" total="2" passed="2">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Default suite" duration-ms="30" started-at="2017-05-25T08:43:51Z" finished-at="2017-05-25T08:43:51Z">
+    <groups>
+    </groups>
+    <test name="Default test" duration-ms="30" started-at="2017-05-25T08:43:51Z" finished-at="2017-05-25T08:43:51Z">
+      <class name="com.autoiq.tests.login.TestDemoDataProvider">
+        <test-method status="PASS" signature="login(java.lang.String, java.lang.String)[pri:0, instance:com.autoiq.tests.login.TestDemoDataProvider@578486a3]" name="login" duration-ms="9" started-at="2017-05-25T14:13:51Z" data-provider="Authentication" finished-at="2017-05-25T14:13:51Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[admin]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[OCS]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- login -->
+        <test-method status="PASS" signature="login(java.lang.String, java.lang.String)[pri:0, instance:com.autoiq.tests.login.TestDemoDataProvider@578486a3]" name="login" duration-ms="1" started-at="2017-05-25T14:13:51Z" data-provider="Authentication" finished-at="2017-05-25T14:13:51Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[testuser_1]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Test@123]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- login -->
+      </class> <!-- com.autoiq.tests.login.TestDemoDataProvider -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>

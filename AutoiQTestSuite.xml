@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="AutoiQ Automation Suite" parallel="false">
+	<test name="AutoiQ Automation Suite" preserve-order="true">
+		<classes>
+			<class name="com.autoiq.tests.login.TestLogin" />
+ 			<class name="com.autoiq.tests.processes.TestCreateProcessesNew" />
+		</classes>
+	</test> <!-- Test -->
+	<parameter name="pdfngreport-properties" value="config/pdfngreport.properties" />
+	<listeners>
+		<listener class-name="com.uttesh.pdfngreport.PDFReportListener" />
+		<listener class-name="org.uncommons.reportng.HTMLReporter" />
+		<listener class-name="org.uncommons.reportng.JUnitXMLReporter" />
+	</listeners>
+</suite>

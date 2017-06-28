@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [AutoiQ Automation Suite]">
+  <parameter name="pdfngreport-properties" value="config/pdfngreport.properties"/>
+  <listeners>
+    <listener class-name="com.uttesh.pdfngreport.PDFReportListener"/>
+    <listener class-name="org.uncommons.reportng.HTMLReporter"/>
+    <listener class-name="org.uncommons.reportng.JUnitXMLReporter"/>
+  </listeners>
+  <test name="AutoiQ Automation Suite(failed)">
+    <classes>
+      <class name="com.autoiq.tests.login.TestLogin">
+        <methods>
+          <include name="loginWithValidCredentials"/>
+          <include name="loginWithInvalidCredentials"/>
+          <include name="loginWithInvalidPassword"/>
+          <include name="loginWithSpceialCharater"/>
+          <include name="loginWithBlankCredentials"/>
+          <include name="loginWithInvalidUsername"/>
+        </methods>
+      </class> <!-- com.autoiq.tests.login.TestLogin -->
+      <class name="com.autoiq.tests.processes.TestCreateProcessesNew">
+        <methods>
+          <include name="Quit"/>
+        </methods>
+      </class> <!-- com.autoiq.tests.processes.TestCreateProcessesNew -->
+    </classes>
+  </test> <!-- AutoiQ Automation Suite(failed) -->
+</suite> <!-- Failed suite [AutoiQ Automation Suite] -->
